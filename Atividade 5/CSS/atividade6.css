@@ -1,0 +1,113 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+main{
+    position: relative;
+    width: 90%;
+    height: 700px;
+    background-color:deeppink;
+    margin: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: chartreuse;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#lado_esquerdo{
+    position: relative;
+    width:30% ;
+    height: 530px;
+    background-color: aquamarine;
+    float: left;
+}
+
+nav{
+    position: relative;
+    width: 90% ;
+    height: 240px;
+    background-color:azure ;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+aside{
+    position: relative;
+    width: 90% ;
+    height: 240px;
+    background-color:azure ;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+
+#lado_direito{
+    position: relative;
+    width: 70%;
+    height: 530px;
+    background-color:rgb(194, 114, 255);
+    float: left;
+}
+
+
+article{
+    position: relative;
+    width: 97%;
+    height: 499px;
+    background-color:darkgray;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 13px;
+}
+
+h1{
+    position:relative ;
+    width: 100% ;
+    height: 30px;
+    background-color: aqua;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(244, 126, 126);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+div{
+    position: relative;
+    width: 100%;
+    height:260px ;
+    background-color: rgb(249, 117, 212);
+}
+
+
+footer{
+    position: relative;
+    width:100% ;
+    height: 90px;
+    background-color:rgb(85, 33, 5);
+    float: left;
+    color: aliceblue;
+
+}
