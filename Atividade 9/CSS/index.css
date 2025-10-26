@@ -11,8 +11,9 @@ header{
 nav{
     display: flex;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; 
+    padding: 20px;
 }
 a{
     display: flex;
@@ -22,12 +23,13 @@ a{
     color:black;
     font-family: "Inter", sans-serif;
 }
+
 .con{
     display: flex;
     border: 2px solid black; 
     border-radius: 2px;
     padding: 10px 15px;
-    margin-right: -90px;
+    margin-right: -7px;
 }
 .claro{
     display: flex;
@@ -39,9 +41,15 @@ a{
 .imagens{
     display: flex;
 }
-#lupa{
+.lupa{
     width: 90px;
     height:50px;
+    display: flex;
+    margin-left: 500px;
+}
+.logo{
+    position: absolute;
+    margin-left: 40rem;
 }
 
 /*Formatação Section*/
@@ -112,7 +120,7 @@ h2{
     margin-top: -3rem;
     margin-left: -15rem;
 }
-.carinho{
+.carrinho{
     position:absolute;
     margin-top: -3rem;
     margin-left: 14rem;
@@ -151,7 +159,7 @@ h3{
     position: relative;
     width: 100%;
     height: 40px;
-    border-radius: 10px 10px  0px 0px;
+    border-radius: 8px 8px  0px 0px;
     border: 1px solid black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 12px;
@@ -175,12 +183,12 @@ h3{
 .botao{
     color: white;
     background-color: #007C89;
-    width: 170px;
+    width: 180px;
     height: 30px;
     font-size: 14px;
     align-items: center;
     border-radius: 10px;
     display: flex;
-    padding: 10px 13px;
+    padding: 9px 12px;
     
 }
