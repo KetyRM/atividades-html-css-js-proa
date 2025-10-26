@@ -11,7 +11,6 @@ header{
 nav{
     display: flex;
     position: relative;
-    align-items: center;
     justify-content: space-around;
     align-items: center; 
 }
@@ -22,7 +21,6 @@ a{
     text-decoration: none;
     color:black;
     font-family: "Inter", sans-serif;
-    
 }
 .con{
     display: flex;
@@ -37,7 +35,6 @@ a{
     background-color: #007C89;
     padding: 10px 15px;
     font-weight: bold;
-
 }
 .imagens{
     display: flex;
@@ -47,7 +44,7 @@ a{
     height:50px;
 }
 
-
+/*Formatação Section*/
 section{
     background-color:#C5DBF2;
     width: 100%;
@@ -58,23 +55,132 @@ section{
     width: 100%;
     height: 680px;
 }
+.centro{
+    width: 1050px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 10px;
+}
 h1{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
-  font-size: 53px;
+  font-size: 60px;
+  color: #241C15;
+}
+h2{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    color: #241C15;
+}
+.mais{
+    display: inline-block;   
+    width: 33%;
+    height: 15%;  
+    background-color: #007C89;    
+    color: white;
+    border: 2px solid #007C89;          /* define cor e espessura da borda */
+    padding: 25px 45px;                 /* controla o tamanho do botão */
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-decoration: none;              /* remove sublinhado */
+
 }
 
 
-/*section*/
 .texto{
-    background-color: aliceblue;
-    width: 500px;
+    width: 550px;
     height: 500px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .image{
     background-color: #F7D5C5;
     width: 500px;
-    height: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+}
 
+.bolinha{
+    position:absolute;
+    margin-top: -3rem;
+    margin-left: -15rem;
+}
+.carinho{
+    position:absolute;
+    margin-top: -3rem;
+    margin-left: 14rem;
+}
+.vela{
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: -13rem;
+}
+h3{
+    margin-top: 2rem;
+    font-size: 25px;
+    font-family: "Inter", sans-serif;
+    color: #db653e;
+    font-weight: 500;
+}
+
+
+.caixa{
+    background-color: white;
+    width: 280px;
+    height: 230px;
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 17rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0px 3px black;
+    border: 2px solid black;
+
+}
+.rosa{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 10px  0px 0px;
+    border: 1px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 12px;
+    background-color: #EEEEEC;
+}
+#comprar{
+    position: relative;
+    width: 250px;
+    height: 140px;
+    align-items: center;
+}
+.azul{
+    display: flex;              /* ativa o flexbox */
+    align-items: center;        /* centraliza verticalmente */
+    justify-content: center;    /* centraliza horizontalmente */
+    position: relative;
+    width: 100%;
+    height: 210px;
+    border-radius: 0px 0px 10px 10px;
+}
+.botao{
+    color: white;
+    background-color: #007C89;
+    width: 170px;
+    height: 30px;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px 13px;
+    
 }
