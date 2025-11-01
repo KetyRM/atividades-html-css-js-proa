@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+
+
+body{
+    background-image: url(../Imagens/fundo.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.texto{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.header{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo{
+    height: 40px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.selecionar_idioma {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: black;
+}
+
+.login {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*Hero section*/
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    max-width: 700px;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*Formulário */
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-form input {
+    padding: 15px;
+    width: 350px;
+    border: 1px solid rgb(159, 157, 157);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgba(2, 2, 2, 0.5);
+    color: white;
+}
+
+.email-form button {
+    padding: 15px 25px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.email-form button:hover {
+    background-color: #f6121d;
+}
+
+/* Responsividade   por parte da Header e main*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .email-form {
+        flex-direction: column;
+    }
+    .email-form input {
+        width: 90%;
+    }
+}
+
+
+
+/* Banner Promocional */
+.promo-banner {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.promo-content {
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.promo-icon {
+    height: 120px;
+    margin-right: 15px;
+}
+
+.promo-content p {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.promo-btn {
+    background-color: #2a2a5e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.promo-btn:hover {
+    background-color: #3d3da1;
+}
+
+
+
+/*Em Alta*/
+.trending {
+  background-color: #000;
+  color: white;
+  padding: 50px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trending h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  position: relative;
+  min-width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.rank {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+  -webkit-text-stroke: 1px white;
+}
+
+/* Setas*/
+.arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.arrow:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.arrow.esquerda{
+  left: 0;
+}
+
+.arrow.direita{
+  right: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px){
+  .card img {
+    height: 250px;
+  }
+  .arrow {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+/*Motivos*/
+.motivos{
+    background-color: black;
+    color: white;
+    padding: 50px 60px;
+}
+
+.rmotivos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.motivo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.motivo{
+    background: linear-gradient(180deg, #1a103d, #0d0b24);
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.motivo:hover {
+    transform: translateY(-5px);
+}
+
+.motivo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.motivo p {
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    .promo-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .cards {
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+/*Seção FAQ*/
+.faq {
+    background-color: #000;
+    color: white;
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+
+/* Blocos das perguntas */
+details{
+    background-color: #2d2d2d;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+}
+
+summary{
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Ícone de + e - */
+summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+    content: "–";
+    transform: rotate(180deg);
+}
+
+/* Conteúdo ao abrir*/
+details p {
+    background-color: #2d2d2d;
+    padding: 0 20px 20px;
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/*Formulário do fim */
+.faq-email {
+    margin-top: 40px;
+}
+
+.faq-email p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Reaproveita o estilo já feito do topo */
+.faq .email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq .email-form input {
+    padding: 15px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgba(2, 2, 2, 0.5);
+}
+
+.faq .email-form button {
+    padding: 15px 25px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq .email-form button:hover {
+    background-color: #f6121d;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .faq {
+        padding: 30px 20px;
+    }
+
+    .faq .email-form {
+        flex-direction: column;
+    }
+
+    .faq .email-form input {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer*/
+
+.footer {
+  background-color: #000;
+  color: #757575;
+  font-family: Arial, sans-serif;
+  padding: 50px 15%;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer .duvidas {
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.footer .duvidas a {
+  color: #757575;
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-idiomas select {
+  background-color: #000;
+  color: #757575;
+  border: 1px solid #757575;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.cop {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 12px;
+  color: #757575;
+}
+
+.info a {
+  color: #757575;
+  text-decoration: underline;
+}
+.direitos{
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 40px 10%;
+  }
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Netflix</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+<!-- Cabecalho com o simbolo, seletor de idiomas e botão de entrar -->
+<header class="header">
+    <img src="Imagens/logo netflix.png" alt="Netflix" class="logo">
+
+    <div class="botoes">
+        <select class="selecionar_idioma">
+            <option>Português</option>
+            <option>English</option>
+        </select>
+        <button class="login">Entrar</button>
+    </div>
+</header>
+
+
+<!-- Parte em destaque com informações-->
+<main class="hero">
+    <div class="texto"></div>
+    <div class="content">
+        <h1>Filmes, séries e muito mais, sem limites</h1>
+        <h2>A partir de R$ 20,90. Cancele quando quiser.</h2>
+        <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+
+        <form class="email-form">
+            <input type="email" placeholder="Email" required>
+            <button type="submit"> Vamos lá > </button>
+        </form>
+    </div>
+</main>
+
+
+
+
+<!-- Sessaõ com banner de pipoca-->
+<section class="promo-banner">
+    <img src="Imagens/pipocas-convertido-de-jpg-removebg-preview.png" alt="Pipoca" class="promo-icon">
+    <div class="promo-content">
+        <p>
+            A Netflix que você adora por apenas <strong>R$ 20,90</strong>.<br>
+            Aproveite nossa opção mais acessível, o plano com anúncios.
+        </p>
+        <button class="promo-btn">Saiba mais</button>
+    </div>
+</section>
+
+
+
+<!-- Sessão dos cards e imagens - Em alta -->
+<section class="trending">
+    <h2>Em alta</h2>
+
+    <div class="carousel-container">
+        <button class="arrow esquerda">&#10094;</button> <!-- O código &#10094 serve para identificar "<" -->
+
+        <div class="cards">
+            <div class="card">
+                <img src="Imagens/Poster - BARBIE.jpg" alt="Filme da Barbie">
+                <span class="rank">1</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagens/wallpaper celular chiquititas.jpg" alt=" Novela Chiquititas">
+                <span class="rank">2</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagens/fuga_das_galinhas.jpg" alt="Filme a Fuga das galinhas">
+                <span class="rank">3</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagens/Jumanji.jpg" alt="Filme Jumanji">
+                <span class="rank">4</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagens/ace ventura.jpg" alt="Filme Jumanji">
+                <span class="rank">5</span>
+            </div>
+
+
+            <div class="card">
+                <img src="Imagens/WANDINHA ☔.jpg" alt="Seriado Wandinha">
+                <span class="rank">6</span>
+            </div>
+            <div class="card">
+                <img src="Imagens/Barbie & The Diamond Castle (2008).jpg" alt="Barbie Castelo de Diamantes">
+                <span class="rank">7</span>
+            </div>
+            <div class="card">
+                <img src="Imagens/Barbie A Fairy Secret (2011).jpg" alt="Barbie e o Segredo das Fadas">
+                <span class="rank">8</span>
+            </div>
+            <div class="card">
+                <img src="Imagens/Homem Aranha no Aranhaverso.jpg" alt="Homem Aranha no Aranha Verso">
+                <span class="rank">9</span>
+            </div>
+            <div class="card">
+                <img src="Imagens/the house.jpg" alt="The house">
+                <span class="rank">10</span>
+            </div>
+        </div>
+
+        <button class="arrow direita">&#10095;</button> <!-- O código &#10095 serve para identificar ">" -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Motivos para assinar-->
+<section class="motivos">
+    <h2>Mais motivos para assinar</h2>
+    <div class="motivo-cards">
+        <div class="motivo">
+            <h3>Aproveite na TV</h3>
+            <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV e outros dispositivos.</p>
+        </div>
+        <div class="motivo">
+            <h3>Baixe séries para assistir offline</h3>
+            <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+        </div>
+        <div class="motivo">
+            <h3>Assista onde quiser</h3>
+            <p>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
+        </div>
+        <div class="motivo">
+            <h3>Crie perfis para crianças</h3>
+            <p>Deixe as crianças se aventurarem com seus personagens favoritos num espaço só para elas.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Perguntas Frequentes  -->
+<section class="faq">
+    <h2>Perguntas frequentes</h2>
+
+    <details>
+        <summary>O que é a Netflix?</summary>
+        <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários
+            premiados em milhares de aparelhos conectados à internet.<br>
+            Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal
+            acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+        </p>
+    </details>
+
+    <details>
+        <summary>Quanto custa a Netflix?</summary>
+        <p> Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal
+            única. Os planos variam de R$ 20,90 a R$ 59,90 por mês. Sem contrato nem taxas extras.</p>
+    </details>
+
+    <details>
+        <summary>Onde posso assistir?</summary>
+        <p>Assista onde quiser, quando quiser. Acesse sua conta Netflix em netflix.com para assistir no computador ou em
+            qualquer aparelho conectado à internet compatível com o aplicativo Netflix, como Smart TVs, smartphones,
+            tablets, aparelhos de streaming e videogames.<br>
+            Você também pode baixar suas séries favoritas com o aplicativo Netflix para iOS ou Android. Use os downloads
+            para levar a Netflix para onde quiser sem precisar de conexão com a internet. Leve a Netflix com você para
+            qualquer lugar.
+        </p>
+    </details>
+
+    <details>
+        <summary>Como faço para cancelar?</summary>
+        <p>A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com
+            apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer
+            momento. </p>
+    </details>
+
+    <details>
+        <summary>O que eu posso assistir na Netflix?</summary>
+        <p>A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais.
+            Assista o quanto quiser, quando quiser.
+        </p>
+    </details>
+
+    <details>
+        <summary>A Netflix é adequada para crianças?</summary>
+        <p>A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio
+            espaço com séries e filmes familiares sob a supervisão dos responsáveis.
+            O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a
+            classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer
+            que elas assistam.
+        </p>
+    </details>
+
+
+
+
+
+    <!-- Campo de email igual ao topo -->
+    <div class="faq-email">
+        <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        <form class="email-form">
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Vamos lá ></button>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+<!-- Footer com os liks vazios-->
+<footer class="footer">
+    <div class="footer-container">
+        <p class="duvidas">
+            Dúvidas? Ligue para <a href="#">0800 591 8943</a>
+        </p>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Perguntas frequentes</a></li>
+                <li><a href="#">Relações com investidores</a></li>
+                <li><a href="#">Formas de assistir</a></li>
+                <li><a href="#">Informações corporativas</a></li>
+                <li><a href="#">Só na Netflix</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Carreiras</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Entre em contato</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Conta</a></li>
+                <li><a href="#">Resgatar cartão pré-pago</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Teste de velocidade</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Comprar cartão pré-pago</a></li>
+                <li><a href="#">Preferências de cookies</a></li>
+                <li><a href="#">Avisos legais</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-idiomas">
+            <select>
+                <option>Português</option>
+                <option>English</option>
+            </select>
+        </div>
+
+        <p class="cop">Netflix Brasil</p>
+        <p class="info">
+            Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+            <a href="#">Saiba mais.</a>
+        </p>
+    </div>
+    <p class="direitos">© 2025 Netflix Clone. Todos os direitos reservados.</p>
+</footer>
+
+
+
+
+
+
+<!-- Script interno para fazer funcionar o carrosel de filmes,séries e novelas -->
+<script>
+    const cards = document.querySelector('.cards');
+    const leftBtn = document.querySelector('.arrow.esquerda');
+    const rightBtn = document.querySelector('.arrow.direita');
+
+    let currentScroll = 0;
+    const cardWidth = 200; // largura + espaçamento aproximado
+
+    rightBtn.addEventListener('click', () => {
+        currentScroll -= cardWidth;
+        cards.style.transform = 'translateX(' + currentScroll + 'px)';
+        limitScroll();
+    });
+
+    leftBtn.addEventListener('click', () => {
+        currentScroll += cardWidth;
+        cards.style.transform = 'translateX(' + currentScroll + 'px)';
+        limitScroll();
+    });
+
+    function limitScroll() {
+        const maxScroll = -(cards.scrollWidth - cards.parentElement.offsetWidth);
+        if (currentScroll > 0) currentScroll = 0;
+        if (currentScroll < maxScroll) currentScroll = maxScroll;
+    }
+</script>
+</body>
+</html>
